@@ -1,8 +1,143 @@
+@use "./colors";
+
 .border,
 .section {
-    border: 1px solid #000;
+  border: 1px solid #000;
 }
 
 .section {
-    min-height: 600px;
+  min-height: 600px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+  font-weight: 300;
+}
+
+.btn {
+  width: 180px;
+  height: 45px;
+  color: colors.$white;
+  text-decoration: none;
+  border: none;
+  font-weight: 700;
+  &--references {
+    background-color: colors.$dark-blue;
+  }
+  &--footer {
+    background-color: colors.$blue;
+  }
+}
+
+.references {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 200px 100px 200px;
+  &__photo {
+    width: 460px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 276px;
+      height: 412px;
+      background-color: colors.$blue;
+      position: absolute;
+      bottom: -34px;
+      left: 210px;
+      display: block;
+      z-index: -1;
+    }
+  }
+  &__content {
+    width: 558px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+
+    &__header {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__text {
+      max-width: 520px;
+      margin-bottom: 130px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$dark-blue;
+  color: colors.$white;
+  padding: 40px 100px 30px 100px;
+  &__content {
+    width: 85%;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__left {
+    width: 50%;
+    min-width: 500px;
+    min-height: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 30px;
+    &__contact {
+      p {
+        a {
+          text-decoration: none;
+          color: colors.$white;
+        }
+      }
+    }
+  }
+  &__right {
+    width: 50%;
+    min-width: 500px;
+    min-height: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 30px;
+  }
+  &__down {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    &__company {
+      width: 70%;
+    }
+    &__list {
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style: none;
+      &__item {
+        a {
+          color: colors.$white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
