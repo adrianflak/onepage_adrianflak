@@ -109,6 +109,17 @@ p {
   flex-direction: column;
   justify-content: space-between;
   line-height: 30px;
+  position: relative;
+}
+.footer__right::before {
+  content: "";
+  height: 90%;
+  display: block;
+  position: absolute;
+  border-left: 1px solid #fff;
+  opacity: 0.2;
+  top: 36px;
+  left: -16px;
 }
 .footer__down {
   width: 100%;
