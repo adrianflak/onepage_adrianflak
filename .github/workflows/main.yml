@@ -13,7 +13,7 @@ jobs:
             - name: Upload files
               uses: SamKirkland/FTP-Deploy-Action@v4.3.4
               with:
-                  server: s31.mydevil.net
+                  server: s1.ct8.pl
                   username: ${{secrets.username_ftp}}
                   password: ${{secrets.password_ftp}}
-                  server-dir: projekt-wspolny/
+                 
