@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
@@ -11971,11 +11972,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap");
+>>>>>>> sk_footer
 .border,
 .section {
   border: 1px solid #000;
 }
 
+<<<<<<< HEAD
 .whatwedo {
   margin: 30px 0;
   border: none;
@@ -11996,3 +12001,149 @@ textarea.form-control-lg {
 .whatwedoImage {
   box-shadow: 35px 35px 0px -26px rgb(26, 129, 152);
 }
+=======
+.section {
+  min-height: 600px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+  font-weight: 300;
+}
+
+.btn {
+  width: 180px;
+  height: 45px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  font-weight: 700;
+}
+.btn--references {
+  background-color: #1a8198;
+}
+.btn--footer {
+  background-color: #26a4bf;
+}
+
+.references {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 200px 100px 200px;
+}
+.references__photo {
+  width: 460px;
+  position: relative;
+}
+.references__photo::before {
+  content: "";
+  width: 276px;
+  height: 412px;
+  background-color: #26a4bf;
+  position: absolute;
+  bottom: -34px;
+  left: 210px;
+  display: block;
+  z-index: -1;
+}
+.references__content {
+  width: 558px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+.references__content__header {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.references__content__text {
+  max-width: 520px;
+  margin-bottom: 130px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a8198;
+  color: #fff;
+  padding: 40px 100px 30px 100px;
+}
+.footer__content {
+  width: 85%;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__left {
+  width: 50%;
+  min-width: 500px;
+  min-height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 30px;
+}
+.footer__left__contact p a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__right {
+  width: 50%;
+  min-width: 500px;
+  min-height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 30px;
+  position: relative;
+}
+.footer__right::before {
+  content: "";
+  height: 90%;
+  display: block;
+  position: absolute;
+  border-left: 1px solid #fff;
+  opacity: 0.2;
+  top: 36px;
+  left: -16px;
+}
+.footer__down {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+.footer__down__company {
+  width: 70%;
+}
+.footer__down__list {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.footer__down__list__item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+* {
+  font-family: "Roboto Slab", serif;
+}/*# sourceMappingURL=style.css.map */
+>>>>>>> sk_footer
