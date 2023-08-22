@@ -4,5 +4,30 @@
 }
 
 .section {
-    min-height: 600px;
+    // min-height: 600px;
+}
+
+.whatwedo {
+    margin: 30px 0;
+    border: none;
+}
+
+.services {
+    width: 100%;
+    height: 100%;
+    background-color: #26a4bf;
+    margin: auto 0;
+    padding: 100px 0;
+}
+
+.servicesImage {
+    -webkit-box-shadow: 44px 47px 0px -26px rgba(26, 129, 152, 1);
+    -moz-box-shadow: 44px 47px 0px -26px rgba(26, 129, 152, 1);
+    box-shadow: 44px 47px 0px -26px rgba(26, 129, 152, 1);
+}
+
+.whatwedoImage {
+    -webkit-box-shadow: 35px 35px 0px -26px rgba(26, 129, 152, 1);
+    -moz-box-shadow: 35px 35px 0px -26px rgba(26, 129, 152, 1);
+    box-shadow: 35px 35px 0px -26px rgba(26, 129, 152, 1);
 }
